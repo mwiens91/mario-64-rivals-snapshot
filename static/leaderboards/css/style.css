@@ -1,0 +1,82 @@
+body {
+	padding-top: 5rem;
+}
+
+.main-content-box {
+	padding: 1.5rem 1.5rem;
+}
+@media (max-width: 766px) {
+	.main-content-box {
+		padding: 1.5rem 0rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.recent-activity-box {
+		padding-left: 0.69em;
+	}
+}
+
+.about-page-box {
+	text-align: center;
+}
+
+.about-page-heading {
+	padding-top: 0.69em;
+}
+
+/* Always see breadcrumbs, even on mobile */
+@media (max-width: 441px) {
+	.breadcrumb {
+		margin-top: 2.2em;
+	}
+}
+
+/* Mario font :) */
+@font-face {
+	font-family: 'PressStart2P';
+	src: url('../fonts/PressStart2P.ttf') format("truetype");
+}
+
+.main-title {
+	font-family: PressStart2P;
+	padding-left: 0.29em;
+}
+
+/* Card deck rows */
+.card-rows {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card-rows > div[class*='col-'] {
+	display: flex;
+	margin: 0.69em 0;
+}
+
+/* Allow entire card to be a link */
+a.card {
+	color: inherit;
+	text-decoration: inherit;
+}
+a.card button {
+	z-index: 1;
+}
+
+a.card.disabled,
+a.card[disabled] {
+	pointer-events: none;
+	opacity: .8;
+}
+
+/* No left padding for tight group list items */
+.list-group-item-tight {
+	padding-left: 0;
+}
+
+/* Add some vertical padding for second detail column box on narrow viewports */
+@media (max-width: 472px) {
+	.column-detail-title {
+		padding-top: 0.69em;
+	}
+}
